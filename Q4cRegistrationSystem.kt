@@ -3,7 +3,7 @@ import kotlin.math.pow
 
 //  data structures, hashing, implementation, *1500
 fun main() {
-    val map = Q4cDictionary<String, Int>(12345678)//(1234567)
+    val map = Q4cDictionary<String, Int>(13579)//(1234567)
     for (i in 0 until readLine()!!.toInt()) {
         val id = readLine()!!
         if (map.containsKey(id)) {
