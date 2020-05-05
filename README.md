@@ -11,3 +11,10 @@ Q3a ShortestPathOfTheKing : https://codeforces.com/contest/3/submission/74469725
 Q2a Winner : https://codeforces.com/contest/2/submission/74293844<br>
 Q1b SpreadSheet : https://codeforces.com/contest/1/submission/73921040<br>
 Q1a TheatreSquare : https://codeforces.com/contest/1/submission/72109212<br>
+LeetCode : https://leetcode.com<br>
+1379 : Find a Corresponding Node of a Binary Tree in a Clone of That Tree
+  https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
+  https://leetcode.com/submissions/detail/334416031/
+1282 : Group the People Given the Group Size They Belong To 
+  https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+  https://leetcode.com/submissions/detail/334893083/
