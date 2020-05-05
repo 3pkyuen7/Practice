@@ -1,0 +1,36 @@
+import java.util.List;
+import java.util.HashMap;
+import java.util.ArrayList;
+
+class Solution {
+    HashMap<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
+    List<List<Integer>> tmp = new ArrayList<>();
+
+    public List<List<Integer>> groupThePeople(int[] groupSizes) {
+        for (int i = 0; i < groupSizes.length; i++) {
+            int finalI = i;
+            if (map.containsKey(groupSizes[i])) {
+                map.computeIfPresent(groupSizes[i], (key, val) -> {
+                    val.add(finalI);
+                    return val;
+                });
+            }else{
+                System.out.println(groupSizes[i]);
+                ArrayList<Integer> e = new ArrayList<Integer>();
+                e.add(i);
+                map.put(groupSizes[i],e);
+            }
+        }
+        System.out.println(map);
+        map.forEach(this::addAndSplitListBySize);// replace lambda with method reference
+        return tmp;
+    }
+
+    public void addAndSplitListBySize(int size, List<Integer> list) {
+        int loopTime = list.size() / size;
+        for(int i = 0; i < loopTime; i ++){
+            tmp.add(list.subList(i*size, (i+1)*size));
+        }
+        System.out.println(tmp);
+    }
+}
